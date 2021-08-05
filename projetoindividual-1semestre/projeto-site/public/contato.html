@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/158751/isolated/preview/b54f40d7acc319566d07de5ee1abd0d0-anel-doodle-design-plano-by-vexels.png"/>
+    <title>Site individual - Anna Guercio</title>
+</head>
+<body>
+    <!-- HEADER DE LOGIN -->
+    <div class="header-login">
+            <div class="text"> 
+              Olá,  <b id="b_usuario"></b>! <a href="#" onclick="logoff()"> Sair</a>
+            </div>
+        </div>
+
+
+    <!-- HEADER 1 -->
+    <div class="header">
+        <div class="container">
+            <div class="header-titulo">
+                <h1> <span class="highlight">Annabelle  </span> WEDDINGS</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER 3 -->
+    <div class="header3">
+            <div class="container">
+                <div class="nav">
+                    <ul>
+                        <b>
+                            <li class="current"><a href="inicio.html">Início</a></li>
+                        </b>
+                        <b>
+                            <li><a href="evento-local.html">Evento</a></li>
+                        </b>
+                        <b> 
+                                <li><a href="casamento.html">+ Casamentos</a></li>
+                            </b>
+                        <b>
+                            <li><a href="musicas.html">Músicas</a></li>
+                        </b>
+                        <b><span class="highlight">
+                            <li><a href="contato.html">Contato</a></li>
+                        </b></span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!-- CONTATO -->
+<div class="contato">
+        <div class="container">
+            <div class="imagem-fundo">
+                <div class="quadro-contato">
+                    <h1>Contato</h1>
+                    <br>
+                    <p>
+                    Deseja contratar nossos serviços? Preencha o quadro abaixo para podermos entrar em contato com você! 
+                    </p>
+                        <b>nome:</b> <input id="nomecontato" class="box-contato1" type="text"><br>
+                        <b>email:</b> <input id="emailcontato" class="box-contato2" type="email"><br>
+                        <b>assunto: </b> <input id="assuntocontato" class="box-contato3" type="text"> <br>
+                        <b>sua mensagem:</b> <textarea id="mensagemcontato" class="box-contato4"></textarea><br>
+                        <button onclick="enviar()" class="botaocontato"> Enviar </button><br>
+                        <div id="div_mensagem" class="mensagem"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+          <!-- RODAPÉ -->
+             <div class="rodape">
+                 <div class="container">
+            Nós acompanhe também nas redes sociais! <br>
+            <img src="img/face.png" width="22px" height="22px"> Facebook: /annabelleweddings</span><span style="color: rgb(135,206,250);"> lllLLLLLLllllllllll</span>
+            <img src="img/insta.png" width="22px" height="22px"> Instagram: @annabelleweddings</span>
+            </div>
+    </div>
+</body>
+</html>
+
+<script>
+    
+    verificar_autenticacao();
+
+function enviar() {
+    var nome = nomecontato.value;
+	var email = emailcontato.value;
+	var assunto = assuntocontato.value;
+	var mensagem = mensagemcontato.value;    
+
+   if(nome == "" || email == "" || assunto == "" || mensagem == "") {
+alert('Todos os campos são obrigatórios!');
+}  else {
+    div_mensagem.innerHTML = `Obrigada pela sua mensagem! Entraremos em contato com você em breve!`
+}
+}
+
+</script>

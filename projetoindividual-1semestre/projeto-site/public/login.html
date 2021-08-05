@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="shortcut icon"
+        href="https://images.vexels.com/media/users/3/158751/isolated/preview/b54f40d7acc319566d07de5ee1abd0d0-anel-doodle-design-plano-by-vexels.png" />
+    <title>Site individual - Anna Guercio</title>
+</head>
+
+<body>
+
+    <!-- HEADER 1 -->
+    <div class="header">
+        <div class="container">
+            <div class="header-titulo">
+                <h1> <span class="highlight">Annabelle </span> WEDDINGS</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER 2 -->
+    <div class="header2">
+        <div class="container">
+            <div class="nav">
+                <ul>
+                    <b>
+                        <li class="current"><a href="index.html">Início</a></li>
+                    </b>
+                    <b>
+                        <li><a href="index.html">Sobre</a></li>
+                    </b>
+                    <b> <span class="highlight">
+                            <li><a href="login.html">Login</a></li>
+                        </span> </b>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="login">
+            <div class="imagem-fundo">
+                    <h1>Login</h1>
+                    <form id="form_login" method="post" onsubmit="return entrar()">
+                            <b>Email:</b><input type="text" id="l_login" name="login" class="box-login">
+                            <br>
+                           <b>Senha:</b> <input type="password" id="l_senha" name="senha" class="box-login2">
+                            <br>
+                            <u><a href="esqueciasenha.html" class="esqueciasenha">Esqueci a senha</a></u> <br>
+                            <button id="btn_entrar"  class="botao-login" onclick="analisar()">Entrar</button> <br><br>
+                            <span><a href="cadastro.html" class="cadastro-login">Ainda não possui <b class="b-cadastro">cadastro?</b>Crie sua conta
+                                aqui agora!</a></span>
+                        </form>
+                 
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <div class="rodape">
+        <div class="container">
+            Nós acompanhe também nas redes sociais! <br>
+            <img src="img/face.png" width="22px" height="22px"> Facebook: /annabelleweddings</span><span
+                style="color: rgb(135,206,250);"> lllLLLLLLllllllllll</span>
+            <img src="img/insta.png" width="22px" height="22px"> Instagram: @annabelleweddings</span>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+function analisar(){
+    let a_email = l_login.value;
+    let a_senha = l_senha.value;
+    let valido = a_email.indexOf('@') >= 0 && a_email.indexOf('.') >= 0;
+    if (a_email == "" || a_senha == ""){
+        alert('Todos os campos devem ser preenchidos!');
+    }
+
+    if (!valido){
+        alert ('E-mail inválido');
+    }
+}
+
+        function entrar() {
+            aguardar();
+            var formulario = new URLSearchParams(new FormData(form_login));
+            fetch("/usuarios/autenticar", {
+                method: "POST",
+                body: formulario
+            }).then(resposta => {
+                
+                if (resposta.ok) {
+    
+                    resposta.json().then(json => {
+    
+                        sessionStorage.login_usuario_meuapp = json.email;
+                        sessionStorage.nome_usuario_meuapp = json.nome;
+                        
+                        window.location.href = 'inicio.html';
+                    });
+    
+                } else {
+    
+                    console.log('Erro de login!');
+    
+                    response.text().then(texto => {
+                        console.error(texto);
+                        finalizar_aguardar(texto);
+                    });
+                }
+            });
+    
+            return false;
+        }
+    
+        function aguardar() {
+            btn_entrar.disabled = true;
+        }
+    
+        function finalizar_aguardar(resposta) {
+            btn_entrar.disabled = false;
+            div_erro.innerHTML = resposta;
+        }
+    
+    </script>

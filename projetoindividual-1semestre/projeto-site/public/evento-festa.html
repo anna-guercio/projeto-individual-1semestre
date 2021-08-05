@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <link rel="shortcut icon"
+        href="https://images.vexels.com/media/users/3/158751/isolated/preview/b54f40d7acc319566d07de5ee1abd0d0-anel-doodle-design-plano-by-vexels.png" />
+    <title>Site individual - Anna Guercio</title>
+</head>
+
+<body>
+    <!-- HEADER DE LOGIN -->
+    <div class="header-login">
+        <div class="text">
+            Olá, <b id="b_usuario"></b>! <a href="#" onclick="logoff()"> Sair</a>
+        </div>
+    </div>
+
+    <!-- HEADER 1 -->
+    <div class="header">
+        <div class="container">
+            <div class="header-titulo">
+                <h1> <span class="highlight">Annabelle </span> WEDDINGS</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER 3 -->
+    <div class="header3">
+        <div class="container">
+            <div class="nav">
+                <ul>
+                    <b>
+                        <li class="current"><a href="inicio.html">Início</a></li>
+                    </b>
+                    <b><span class="highlight">
+                            <li><a href="evento-local.html">Evento</a></li>
+                    </b></span>
+                    <b>
+                        <li><a href="casamento.html">+ Casamentos</a></li>
+                    </b>
+                    <b>
+                        <li><a href="musicas.html">Músicas</a></li>
+                    </b>
+                    <b>
+                        <li><a href="contato.html">Contato</a></li>
+                    </b>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EVENTO PARTE ESQUERDA-->
+    <div class="evento-ideia">
+        <h1>Aurora & Nicolas</h1>
+        <!-- SLIDE-->
+        <div id="slider">
+            <div id="box">
+                <img src="img/festa1.PNG">
+            </div>
+
+            <!-- buttons for controls slider -->
+            <button class="botao-esquerda" onclick="prewImage()">
+                <</button> <button class="botao-direita" onclick="nextImage()">>
+            </button>
+        </div>
+        <h3>Festa</h3>
+        <p>
+                No momento da festa, os convidados poderam desfrutar de um cardápio variado com carne, peixe, frango e tudo para todos os gostos. Além disso, a noite contou com muita música de diversos estilos, drinks (alcóolicos e não alcóolicos) e muita diversão que durou a noite toda.  </p>
+    </div>
+
+    <!-- EVENTO PARTE DIREITA -->
+    <div class="evento-direita">
+        <div class="container">
+            <h1>Evento:</h1>
+          <div class="item"><a href="evento-local.html"><img src="img/beach.png" class="img-eventoideia"> Local</a></div>
+          <div class="item"><a href="evento-decoracao.html"><img src="img/vase.png" class="img-eventoideia"> Decoração</a></div>
+          <div class="item"><a href="evento-traje.html"><img src="img/shoe.png" class="img-eventoideia"> Traje</a></div>
+          <div class="item"><a href="evento-cerimonia.html"><img src="img/wedding.png" class="img-eventoideia"> Cerimônia</a></div>
+          <div class="item-highlight"><a href="evento-festa.html"><img src="img/wine.png" class="img-eventoideia"> Festa</a></div>
+          <div class="item"><a href="evento-lua.html"><img src="img/heart.png" class="img-eventoideia"> Lua de Mel</a></div>
+    </div>
+</div>
+
+    <!-- RODAPÉ -->
+    <div class="rodape">
+        <div class="container">
+            Nós acompanhe também nas redes sociais! <br>
+            <img src="img/face.png" width="22px" height="22px"> Facebook: /annabelleweddings</span><span
+                style="color: rgb(135,206,250);"> lllLLLLLLllllllllll</span>
+            <img src="img/insta.png" width="22px" height="22px"> Instagram: @annabelleweddings</span>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    verificar_autenticacao();
+
+    var slider_content = document.getElementById('box');
+
+    // contain images in an array
+    var image = ['festa1', 'festa2', 'festa3', 'festa5'];
+    var i = image.length;
+
+    // function for next slide 
+    function nextImage() {
+        if (i < image.length) {
+            i = i + 1;
+        } else {
+            i = 1;
+        }
+        slider_content.innerHTML = "<img src=img/" + image[i - 1] + ".PNG>";
+    }
+
+    // function for prew slide
+    function prewImage() {
+
+        if (i < image.length + 1 && i > 1) {
+            i = i - 1;
+        } else {
+            i = image.length;
+        }
+        slider_content.innerHTML = "<img src=img/" + image[i - 1] + ".PNG>";
+    }
+
+
+    // script for auto image slider
+    setInterval(nextImage, 4000);
+
+</script>

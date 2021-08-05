@@ -1,0 +1,1052 @@
+html{
+  scroll-behavior: smooth;
+} 
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.5;
+  background: white;
+}
+
+/* SCROLL */
+/* SCROLL */
+/* SCROLL */
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(135, 206, 250);
+
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  margin: 0px;
+  background: white;
+}
+
+/*HEADER 1*/
+/*HEADER 1*/
+/*HEADER 1*/
+
+.header {
+  background: white;
+  color: black;
+  padding-top: 1%;
+  padding-bottom: 0px;
+  min-height: 90%;
+  text-align: center;
+}
+
+.header .header-titulo {
+  text-align: center;
+  font-size: 35px;
+}
+
+.header .header-titulo h1 {
+  margin: 0;
+}
+
+.header .highlight,
+.header .current a {
+  color: rgb(135, 206, 250);
+  font-weight: bold;
+}
+
+/* HEADER 2 */
+/* HEADER 2 */
+/* HEADER 2 */
+
+.header2 {
+  background: white;
+  color: black;
+  height: 60%;
+  padding-bottom: 5px;
+  border-bottom: rgb(135, 206, 250) 18px solid;
+}
+
+.header2 .nav {
+  margin-left: 29%;
+}
+
+.header2 .nav a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding-right: 200px;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav .highlight a {
+  color: rgb(58, 175, 248);
+  font-weight: bold;
+}
+
+/*HEADER 3*/
+/*HEADER 3*/
+/*HEADER 3*/
+
+.header3 {
+  background: white;
+  color: black;
+  height: 60%;
+  padding-bottom: 5px;
+  border-bottom: rgb(135, 206, 250) 18px solid;
+}
+
+.header3 .nav {
+  margin-left: 15%;
+}
+
+.header3 .nav a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding-right: 140px;
+}
+
+.header3 .nav li {
+  display: inline;
+}
+
+.header3 .nav .highlight a {
+  color: rgb(58, 175, 248);
+  font-weight: bold;
+}
+
+/* HEADER DE LOGIN */
+/* HEADER DE LOGIN */
+/* HEADER DE LOGIN */
+
+.header-login{
+  background: rgb(188, 229, 255);
+  width: 100%;
+  height: 4%;
+  position: absolute;
+}
+
+.header-login .text{
+  color: #000;
+  text-decoration: none;
+  float: right;
+  margin-right: 3%;
+  font-size: 15px;
+}
+
+.header-login a{
+  text-decoration: none;
+  border-radius: 10px;
+  color: #000;
+padding-left: 10px;
+}
+
+
+/*IMAGEM E TEXTO TELA INICIAL*/
+/*IMAGEM E TEXTO TELA INICIAL*/
+/*IMAGEM E TEXTO TELA INICIAL*/
+
+.imagem-telainicial {
+  background-image: url("../img/casal.png");
+  background-size: cover;
+  height: 600px;
+}
+
+.telainicial {
+  min-height: 400px;
+  text-align: center;
+  color: blue;
+}
+
+.telainicial h1 {
+  font-size: 55px;
+  margin-top: 20%;
+  margin-bottom: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.telainicial p {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.telainicial .container .texto-telainicial {
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 450px;
+  line-height: 40px;
+  height: 30px;
+  margin-left: 18%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* SOBRE */
+/* SOBRE */
+/* SOBRE */
+
+.info {
+  position: relative;
+  margin: 10px;
+}
+.info .container .texto-info {
+  background: white;
+  width: 50%;
+  height: 50%;
+  color: rgb(58, 56, 56);
+  float: left;
+  font-size: 15px;
+  margin-top: 50px;
+  overflow: visible;
+  margin-left: 10px;
+  margin-right: 0px;
+  padding-bottom: 0px;
+  min-height: 300px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.info .container .texto-info h1 {
+  background: white;
+  font-size: 70px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.info .container .imagem-info {
+  width: 450px;
+  height: 500px;
+  color: black;
+  float: right;
+  margin-left: 0px;
+  margin-right: 70px;
+  min-height: 300px;
+}
+
+.login-sobre{
+  color: rgb(58, 56, 56);
+}
+
+/* RODAPÉ HOME */
+/* RODAPÉ HOME */
+/* RODAPÉ HOME */
+
+.rodape .container{
+  background: rgb(135, 206, 250);
+  color: white;
+  min-height: 50px;
+  width: 100%;
+  height: 20%;
+  border-bottom: rgb(135, 206, 250) 12px solid;
+  float: left;
+  padding-top: 25px;
+  position: relative;
+  line-height: 40px;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+/* CONTATO */
+/* CONTATO */
+/* CONTATO */
+
+.contato {
+  min-height: 400px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contato h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.contato p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.contato .container .quadro-contato {
+    padding-top: 5px;
+    color: white;
+    text-align: center;
+    top: 180px;
+    width: 80%;
+    line-height: 40px;
+    margin-left: 10%;
+}
+
+.contato .container .quadro-contato b {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.contato .container .quadro-contato .box-contato1 {
+  background: white;
+  border: 2px white solid;
+  margin-top: 0px;
+  width: 300px;
+  height: 25px;
+  margin-right: 96px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.contato .container .quadro-contato .box-contato2 {
+  background: white;
+  border: 2px white solid;
+  margin-top: 0px;
+  width: 300px;
+  height: 25px;
+  margin-top: 18px;
+  margin-right: 100px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.contato .container .quadro-contato .box-contato3 {
+  background: white;
+  border: 2px white solid;
+  margin-top: 10px;
+  width: 300px;
+  height: 25px;
+  margin-top: 18px;
+  margin-right: 125px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.contato .container .quadro-contato .box-contato4 {
+  background: white;
+  border: 2px white solid;
+  margin-top: 10px;
+  width: 500px;
+  height: 120px;
+  margin-top: 18px;
+  margin-right: 210px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.contato .container .quadro-contato .botaocontato {
+  background: rgb(188, 229, 255);
+  border: 2px rgb(188, 229, 255) solid;
+  margin-top: 5px;
+  size: 50px;
+  width: 200px;
+  margin-left: 0px;
+  margin-right: px;
+  font-size: 20px;
+}
+
+.contato .container .quadro-contato .mensagem {
+  font-size: 20px;
+  text-align: center;
+}
+
+.imagem-fundo {
+  background-image: url("../img/blurry.jpg");
+  background-size: cover;
+  height: 550px;
+}
+
+/* LOGIN */
+/* LOGIN */
+/* LOGIN */
+
+.login {
+  color: #ffffff;
+  background: white;
+  border-bottom: white 9px solid;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login h1 {
+  font-size: 80px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 42%;
+}
+
+.login b {
+  font-size: 40px;
+  margin-left: 29%
+}
+
+.login .box-login {
+  background: white;
+  border: 2px white solid;
+  margin-top: 5%;
+  width: 20%;
+  height: 6%;
+  margin-left: 2.5%;
+  font-size: 20px;
+}
+
+.login .box-login2 {
+  background: white;
+  border: 2px white solid;
+  margin-top: 1%;
+  width: 20%;
+  height: 6%;
+  margin-left: 1.25%;
+  margin-bottom: 1%;
+  font-size: 20px;
+}
+
+
+.login .botao-login {
+  background: rgb(188, 229, 255);
+  border: 2px rgb(188, 229, 255) solid;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 41%;
+  size: 100px;
+  width: 250px;
+  font-size: 30px;
+}
+
+/*esqueci a senha e cadastro*/
+
+.login u {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.login .esqueciasenha{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 2%;
+  margin-left: 43%;
+}
+
+.login .cadastro-login{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-left: 28%;
+  margin-right: 1.5%;
+}
+
+
+.login .b-cadastro{
+  color: rgb(9, 156, 248);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 2%;
+  margin-left: 0%;
+  margin-right: 1.5%;
+}
+/* CADASTRO */
+/* CADASTRO */
+/* CADASTRO */
+
+
+.cadastro {
+  color: #ffffff;
+  background: white;
+  border-bottom: white 9px solid;
+  font-family: Arial, Helvetica, sans-serif;}
+
+.cadastro h1 {
+  font-size: 75px;
+  margin-top: 0%;
+  margin-bottom: 2%;
+  margin-left: 38%;
+}
+
+.cadastro b{
+  font-size: 35px;
+  float: left;
+  margin-left: 30%;
+}
+
+.cadastro .email-c{
+  font-size: 35px;
+  float: left;
+  margin-left: 30.5%;
+}
+
+.cadastro .senha-c{
+  font-size: 35px;
+  float: left;
+  margin-left: 29.5%;
+}
+
+.cadastro .confirmacao{
+  font-size: 35px;  
+  float: left;
+  margin-left: 10%;
+}
+
+.cadastro .box-cadastro {
+  background: white;
+  border: 2px white solid;
+  margin-top: 1%;
+  width: 20%;
+  height: 6%;
+  margin-left: 1.5%;
+  font-size: 20px;
+}
+
+.cadastro .box-cadastro2{
+  background: white;
+  border: 2px white solid;
+  margin-top: 1%;
+  width: 20%;
+  height: 6%;
+  margin-left: 1.5%;
+  font-size: 20px;
+}
+
+.cadastro .botao-cadastro {
+  background: rgb(188, 229, 255);
+  border: 2px rgb(188, 229, 255) solid;
+  margin-top: 2%;
+  margin-left: 40.5%;
+  size: 100px;
+  width: 250px;
+  font-size: 30px;
+}
+
+.cadastro span{
+  font-size: 18px;
+  margin-left: 35%;
+}
+
+.cadastro a{
+  color: white;
+  font-size: 18px;
+  margin-left: 0%;
+}
+
+/*EVENTO IDEIA*/
+/*EVENTO IDEIA*/
+/*EVENTO IDEIA*/
+
+
+/* EVENTO PARTE ESQUEDA */
+.evento-ideia{
+  background: white;
+  width: 55%;
+  float: left;
+  margin: 2%;
+  margin-right: 0%;
+}
+
+.evento-ideia h1{
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+#slider img{
+  width: 650px;
+  height: 450px;
+}
+
+#slider{
+width: 650px;
+height: 450px;
+margin: 1%;
+margin-left: 8%;
+margin-bottom: 1%;
+position: relative;
+border: 10px solid rgb(135, 206, 250);
+box-shadow: 0px 0px 5px 2px #ccc;
+}
+
+#slider-decoracao img{
+  width: 550px;
+  height: 450px;
+}
+
+#slider-decoracao{
+width: 550px;
+height: 450px;
+margin: 1%;
+margin-left: 15%;
+margin-bottom: 1%;
+position: relative;
+border: 10px solid rgb(135, 206, 250);
+box-shadow: 0px 0px 5px 2px #ccc;
+}
+
+.botao-direita{
+padding: 10px;
+width: 6%;
+border: none;
+background: black;
+font-size: 30px;
+color: white;
+position: absolute;
+margin-left: 94%;
+top:45%;
+cursor: pointer;
+}
+
+.botao-esquerda{
+padding: 10px;
+width: 6%;
+border: none;
+background: black;
+font-size: 30px;
+color: white;
+position: absolute;
+top:45%;
+cursor: pointer;
+}
+
+.next{
+border-radius: 10px 0px 0px 10px;
+margin-left: 950px;
+}
+        
+.prew{
+border-radius: 0px 10px 10px 0px;
+}
+
+.evento-ideia h3{
+  font-size: 50px;
+  margin: 0%;
+  text-align: center;
+}
+
+.evento-ideia p{
+  font-size: 19px;
+  margin: 0%;
+  margin-left: 7%;
+  padding-right: 6%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+/* EVENTO PARTE DIREITA */
+
+.evento-direita .container{
+  width: 30%;
+  height: 450px;
+  float: right;
+  margin-top: 9%;
+  margin-right: 8%;
+  border-left: 5px solid rgb(135, 206, 250);
+}
+
+.evento-direita .container .item{
+  background: rgb(135, 206, 250);
+  width: 80%;
+  height: 10%;
+  margin-bottom: 2%;
+  margin-left: 9%;
+}
+
+.evento-direita .container .item-highlight{
+  background: rgb(93, 189, 248);
+  border: #000 0.5px solid;
+  width: 80%;
+  height: 10%;
+  margin-bottom: 2%;
+  margin-left: 9%;
+}
+
+.evento-direita a{
+  color: white;
+  font-size: 32px;
+  margin: 0%;
+  margin-left: 60px;
+  margin-top: 0%;
+  padding-bottom: 1%;
+  text-decoration: none;
+}
+
+.evento-direita h1{
+  font-size: 50px;
+  text-align: center;
+  margin: 0%;
+}
+
+.img-eventoideia{
+  width: 35px;
+  margin-top: 5px;
+  height: 35px;
+  margin-right: 5%;
+}
+/*
+.evento-direita .item-highlight{
+  flex: 1;
+  margin: 5px;
+  background: rgba(67, 179, 248, 0.945);
+  color:white;
+  border: 1px white solid;
+  box-shadow: 0px 0px 6px 3px #ccc;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	font-size: 2.5em;
+}*/
+
+/* HISTÓRIAS */ 
+/* HISTÓRIAS */ 
+/* HISTÓRIAS */ 
+
+.casamentos .molduras{
+  background: white;
+  width: 30%;
+  height: 800px;  
+  margin: 1%;
+  margin-left: 2%;
+  margin-bottom: 0%;
+  float: left;
+}
+
+.casamentos h1{
+  text-align: center;
+  margin: 2%;
+}
+
+.casamentos p{
+  text-align: center;
+  margin: 1%;
+} 
+
+.casamentos img{
+  width: 98%;
+  margin: 1%;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px 1px;
+}
+
+/* MÚSICAS */
+/* MÚSICAS */
+/* MÚSICAS*/
+
+.music-container{
+  width: 350px;
+  height: 580px;
+  background-color: rgba(0, 0, 0, 0.932) !important;
+  color: #fff !important;
+  font-family: sans-serif;
+  float: left;
+  margin-top: 3%;
+  margin-right: 0%;
+  margin-left: 7%;
+  margin-bottom: 10%;
+}
+
+.music-playlist ::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.music-playlist ::-webkit-scrollbar-track {
+  background: white;
+
+}
+
+.music-playlist ::-webkit-scrollbar-thumb {
+  background: rgb(135, 206, 250);
+
+}
+
+.music-header{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid white;
+  background: rgb(135, 206, 250);
+
+}
+
+.music-header .title{
+  width: 250px;
+  height: 30px;
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+}
+
+.music-header .back{
+  float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.music-header .search{
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.music-playlist{
+  width: 100%;
+  height: 440px;
+  margin-bottom: 0%;
+}
+
+.music-menu{
+  width: 100%;
+  height: 35px;
+}
+
+.menu{
+  width: 275px;
+  height: 16px;
+  margin: 15px 38px auto;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+
+.music-container ul{
+  font-size: 10px;
+  padding: initial;
+}
+
+.music-container ul li{
+  list-style-type: none;
+  display: inline-block;
+  border-right: 1px solid #fff;
+}
+
+.music-container ul li a{
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  letter-spacing: 0.8px;
+}
+
+.music-container ul li:last-child{
+  border-right: none;
+}
+
+.music-box{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+background: rgba(26, 25, 25, 0.938);
+}
+
+.music-box::-webkit-scrollbar-track {
+  background: rgba(26, 25, 25, 0.938);
+
+}
+
+.music-box .more{
+  margin-right: 10px;
+  margin-top: 15px;
+  font-weight: normal;
+  color: #e1e1e1;
+  cursor: pointer;
+}
+
+.music-info{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background: rgba(26, 25, 25, 0.938);
+}
+
+.music-img{
+  width: 50px;
+  height: 50px;
+}
+
+.music-img img{
+  width: 40px;
+  height: 40px;
+  margin: 2px 5px;
+  padding: 1px;
+
+}
+
+.music-name{
+  width: 300px;
+  padding: 0 5px;
+  height: 50px;
+}
+
+.music-name h6{
+  margin-top: 7px;
+  margin-bottom: 6%;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  line-height: 15px;
+}
+
+.music-name p{
+  font-size: 10px;
+  line-height: 1px;
+  letter-spacing: 0.5px;
+  color: #e1e1e1;
+  cursor: pointer;
+}
+
+.music-container hr{
+  width: 95%;
+  margin-top: 4px !important;
+  margin-bottom: 6px !important;
+}
+
+.music-container .music-play{
+  width: 100%;
+  height: 80px;
+  margin-top: 0%;
+  background: black;
+  display: flex;
+}
+
+.play-image img{
+  width: 50px;
+  height: 48px;
+  margin: 5px;
+  margin-top: 12px;
+  border-radius: 5px;
+}
+
+
+.play-controls{
+  width: 30%;
+  height: 100%;
+  background: black;
+  float: left;
+}
+
+.play-controls h5{
+  width: 100%;
+  font-size: 15px;
+  font-weight: normal;
+  margin-left: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  line-height: 10px;
+  float: left;
+}
+
+.play-controls p{
+  width: 100%;
+  height: 10%;
+  font-size: 10px;
+  margin-left: 12px;
+  letter-spacing: 0.5px;
+  color: #ccc;
+}
+
+.play-icons{
+  background: black;
+  float: right;
+  width: 180px;
+  height: 50px;
+  margin-left: 1%;
+  margin-top: 5%;
+  margin-right: 2%;
+}
+
+.play-icons hr{
+  margin-right: 20%;
+}
+
+.play-icons .fa{
+  width:15px;
+  height: 15px;
+  font-size: 13px;
+  color: #000;
+  margin-top: 0%;
+  border-radius: 50%;
+  background-color: #999;
+  margin: 6px 12px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+
+.music-imagem .dance1{
+  width: 28%;
+  height: 39%;
+  float: left;
+  margin-left: 2%;
+  margin-top: 3%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 5px 1px;
+}
+
+.music-imagem .dance2{
+  width: 28%;
+  height: 39%;
+  float: right;
+  margin-right: 2%;
+  margin-top: 3%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 5px 1px;
+}
+
+.music-esquerda{
+  width: 80%;
+  float: left;
+  margin-top: 1%;
+}
+
+.music-esquerda h1{
+  text-align: center;
+  width: 100%;
+  margin-left: 12%;
+}
+
+.music-esquerda p{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0%;
+  width: 100%;
+  margin-left: 9%;
+}
+
+.music-scan{
+  width: 130px;
+  height: 130px;
+  float: right;
+  margin-right: 5%;
+  margin-top: 1%;
+  border: 2px solid black;
+  box-shadow: 0px 0px 5px 2px #ccc;
+}
